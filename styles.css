@@ -56,7 +56,7 @@ main {
 }
 
 .intro h2 {
-    color: #8fa500;
+    color: #adc707;
 }
 
 .plant-grid {
@@ -67,7 +67,7 @@ main {
 
 .plant-card {
     background-color: white;
-    border: 2px solid #315c3a;
+    border: 2px solid #adc707;
     border-radius: 10px;
 
     padding: 20px;
