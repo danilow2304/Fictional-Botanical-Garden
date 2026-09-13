@@ -159,3 +159,21 @@ footer {
         font-size: 14px;
     }
 }
+main {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+form label {
+    text-align: center;
+}
+
+form input {
+    margin-bottom: 15px;
+}
