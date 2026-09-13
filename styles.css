@@ -8,10 +8,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(235, 233, 238);
     color: rgb(0, 0, 0);
-
 }
 
-/* header */
+/* Header */
 #main-header {
     background-color: #d1ce00;
     text-align: center;
@@ -23,6 +22,7 @@ body {
     margin-bottom: 10px;
 }
 
+/* Navigation */
 .navbar {
     background-color: rgb(23, 21, 21);
     display: flex;
@@ -41,12 +41,13 @@ body {
     background-color: #333;
 }
 
-/*main*/
+/* Main */
 main {
     max-width: 1000px;
     margin: 30px auto;
     padding: 20px;
 }
+
 .intro {
     background-color: white;
     border: 1px solid #ccc;
@@ -59,6 +60,7 @@ main {
     color: #d1ce00;
 }
 
+/* Plants */
 .plant-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -69,21 +71,20 @@ main {
     background-color: white;
     border: 2px solid #d1ce00;
     border-radius: 10px;
-
     padding: 20px;
-
     display: flex;
     gap: 30px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
-image-section {
+
+.image-section {
     flex: 1;
 }
 
 .image-section img {
-    width: 100%;
-    height: auto;
-
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
     border: 3px solid #d1ce00;
     border-radius: 8px;
 }
@@ -101,6 +102,7 @@ image-section {
     line-height: 1.6;
 }
 
+/* Table */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -122,6 +124,7 @@ td {
     background-color: #f4f4f4;
 }
 
+/* Footer */
 footer {
     background-color: #222;
     color: white;
@@ -130,11 +133,33 @@ footer {
     margin-top: 40px;
 }
 
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
 
-/* Responsive css for mobile devices */
+form label {
+    font-weight: bold;
+    text-align: center;
+}
+
+form input {
+    margin-bottom: 15px;
+}
+
+button {
+    width: 300px;
+    padding: 12px;
+    font-size: 18px;
+}
+
+/* Responsive CSS for mobile devices */
 @media (max-width: 480px) {
+
     #main-header {
-        padding: 20px 10 px;
+        padding: 20px 10px;
     }
 
     #main-header h1 {
@@ -145,52 +170,38 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
     .navbar a {
         width: 100%;
         text-align: center;
     }
+
     main {
         margin: 10px;
         padding: 10px;
     }
+
     .plant-card {
         padding: 15px;
+        flex-direction: column;
     }
+
+    .image-section img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    form {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    button {
+        width: 100%;
+    }
+
     table {
         font-size: 14px;
     }
-}
-main {
-    display: flex;
-    justify-content: center;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-}
-
-form label {
-    text-align: center;
-}
-
-form input {
-    margin-bottom: 15px;
-}
-form label {
-    font-weight: bold;
-    text-align: center;
-}
-.image-section img {
-    width: 250px;
-    height: 200px;
-    object-fit: cover;
-    border: 3px solid #d1ce00;
-    border-radius: 8px;
-}
-button {
-    width: 300px;
-    padding: 12px;
-    font-size: 18px;
 }
