@@ -159,19 +159,3 @@ footer {
         font-size: 14px;
     }
 }
-html, body {
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-footer {
-    margin-top: auto;
-    text-align: center;
-    padding: 15px;
-}
