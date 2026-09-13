@@ -188,3 +188,8 @@ form label {
     border: 3px solid #d1ce00;
     border-radius: 8px;
 }
+button {
+    width: 300px;
+    padding: 12px;
+    font-size: 18px;
+}
